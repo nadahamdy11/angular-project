@@ -1,0 +1,28 @@
+h3{
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 20px;
+  font-weight: 900;
+}
+div{
+  background-color: rgb(135, 87, 53);
+  width: auto;
+  height: 90px;
+  border: 1px solid #151515;
+  border-radius: 20px;
+}
+body{
+  height: 500px;
+}
+.btn{
+  margin-left: 50%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+@media (mix-width:767px) {
+  div{
+    margin-top: 200px;
+  } 
+
+}

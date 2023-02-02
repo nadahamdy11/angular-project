@@ -1,0 +1,29 @@
+<div class="container my-3 col-md-6">
+  <h3 class="text-center"> List order and Data </h3>
+  <div class="card my-3">
+      <table class="table table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Age</th>
+          <th scope="col">order</th>
+          <th scope="col">address</th>
+          </tr>
+          <tr *ngFor="let data of userData; let i=index">
+            <th>{{i+1}}</th>
+            <th>{{ data.name}}</th>
+            <th>{{ data.phone}}</th>
+            <th>{{ data.age}}</th>
+            <th>{{ data.order}}</th>
+            <th>{{ data.address}}</th>
+            <div class="social">
+              <a  (click)="onDelete(data.id)"><i class="fa-solid fa-delete-left"></i></a>
+              <a  routerLink="/updateuser/{{data.id}}"><i class="fa-solid fa-pen-to-square "></i></a>
+              <a routerLink="/showuser/{{data.id}}"> <i class="fa-solid fa-pen-to-square "></i></a>
+            </div>
+          </tr>
+      </table>
+    </div>
+  </div>
+

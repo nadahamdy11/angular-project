@@ -1,0 +1,38 @@
+<section class="section-bg">
+  <div class="container my-5 pt-5">
+      <div class="card "data-aos="zoom-in">
+
+          <div class="card-body">
+              <form action="" #formEmployee="ngForm">
+              <div class="form-group">
+                  <label for="">Your Name</label>
+                  <input type="text" class="form-control" [(ngModel)]="contectus.name"   required minlength="3" maxlength="20" #contectName="ngModel" name="name">
+                  <div class="alert alert-danger" *ngIf="contectName.invalid && contectName.touched">
+                      Please Enter Valid Name
+                  </div>
+
+              </div>
+              <div class="form-group">
+                  <label for=""> your phone</label>
+                  <input required type="text" class="form-control"[(ngModel)]="contectus.phone" #contectphone="ngModel" name="phone">
+                  <div class="alert alert-danger" *ngIf="contectphone.invalid && contectphone.touched">
+                      Please Enter Valid phone
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="">your massage</label>
+                  <textarea required type="text" class="form-control"[(ngModel)]="contectus.message" #contectorder="ngModel" name="order" minlength="6" maxlength="14" ></textarea>
+                  <div class="alert alert-danger" *ngIf="contectorder.invalid && contectorder.touched">
+                      You must enter your message
+                  </div>
+              </div>
+
+              <div>
+                  <button  [disabled]="formEmployee.invalid" (click)="uiSubmit()" class="btn btn-info">Submit your message</button>
+              </div>
+          </form>
+          </div>
+      </div>
+  </div>
+</section>

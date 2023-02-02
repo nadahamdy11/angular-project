@@ -1,0 +1,20 @@
+body{
+  background-color: #000;
+  color: white;
+}
+.card{
+  background-color: #333;
+  color: white;
+}
+.container {
+  height: 800px;
+}
+h3{
+  font-size: 40px;
+  font-weight: 800;
+}
+button{
+  background-color: #E5C496;
+  font-size: 20px;
+  font-weight: 500;
+}

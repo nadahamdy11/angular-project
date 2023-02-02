@@ -1,0 +1,31 @@
+<div class="main_content_contianer">
+  <div class="imgs_container">
+    <img src="../../../assets/imgs/img2.png" class="icon2">
+  </div>
+
+
+  <div class="container-fluid mt-5 pt-5 pb-5">
+    <div class="card ">
+      <h3 class="text-center pt-5 pb-2 text">log in </h3>
+      <div class="card-body">
+        <form #logInForm="ngForm">
+        <div class="form-group mb-3">
+          <label for="" class="text">User Name<span class="text-danger">{{ErrorMsg}}</span></label>
+          <input type="text" required name="name" #logInName="ngModel" [(ngModel)]="name" maxlength="30" minlength="3" class="form-control">
+          <div *ngIf="logInName.touched && logInName.invalid" class="alert alert-danger">
+            <p>Please Enter vaild Name</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="" class="text">User password</label>
+          <input type="password" #logInPassword="ngModel" [(ngModel)]="password" required name="password" maxlength="30" minlength="6" class="form-control">
+          <div *ngIf="logInPassword.touched && logInPassword.invalid" class="alert alert-danger">
+            <p>Please Enter vaild Name</p>
+          </div>
+        </div>
+        <button [disabled]="logInForm.invalid" class="btn btn-info w-100 mt-5" (click)="submit()" >
+          log in
+        </button>
+      </form>
+
+    </div>

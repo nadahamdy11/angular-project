@@ -1,0 +1,46 @@
+<section class="section-bg">
+  <div class="container my-5 pt-5">
+      <div class="card "data-aos="zoom-in">
+          <div class="card-body">
+              <form action="" #formEmployee="ngForm">
+              <div class="form-group">
+                  <label for="">user Name</label>
+                  <input type="text" class="form-control" [(ngModel)]="user.name"   required minlength="3" maxlength="20" #employeeName="ngModel" name="name">
+                  <div class="alert alert-danger" *ngIf="employeeName.invalid && employeeName.touched">
+                      Please Enter Valid Name
+                  </div>
+
+              </div>
+              <div class="form-group">
+                  <label for="">phone</label>
+                  <input required type="text" class="form-control"[(ngModel)]="user.phone" #userphone="ngModel" name="phone">
+              </div>
+              <div class="form-group">
+                  <label for="">user age</label>
+                  <input required type="text" class="form-control" [(ngModel)]="user.age" #userage="ngModel" name="phone" required minlength="1" maxlength="12">
+                  <div class="alert alert-danger" *ngIf="userphone.invalid && userphone.touched">
+                      Please Enter Valid age
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="">order</label>
+                  <input required type="text" class="form-control"[(ngModel)]="user.order" #userorder="ngModel" name="order" minlength="6" maxlength="14" >
+                  <div class="alert alert-danger" *ngIf="userorder.invalid && userorder.touched">
+                      You must enter your order
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="">user address</label>
+                  <input required type="text" class="form-control"[(ngModel)]="user.address" #useraddress="ngModel" name="address">
+                  <div class="alert alert-danger" *ngIf="useraddress.invalid && useraddress.touched">
+                      This Field Is required
+                  </div>
+              </div>
+              <div>
+                  <button  [disabled]="formEmployee.invalid" (click)="onSubmit()" class="btn btn-info">Submit Data</button>
+              </div>
+          </form>
+          </div>
+      </div>
+  </div>
+</section>

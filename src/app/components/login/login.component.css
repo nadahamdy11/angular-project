@@ -1,0 +1,32 @@
+
+.main_content_contianer{
+  display: flex;
+  flex-direction: row;
+  background-image: url(/../../../assets/imgs/back.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon2{
+  width: 500px;
+}
+.card{
+  width: 450px;
+  float: right;
+
+}
+@media (max-width:767px) {
+  .main_content_contianer{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+  }
+  .icon2{
+    width: 250px;
+  }
+  .card{
+    width: 320px;
+
+  }
+}
+

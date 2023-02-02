@@ -1,0 +1,381 @@
+*{
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+
+header{
+	background: white;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%;
+    position:sticky ;
+    top:0;
+    
+}
+.imgs{
+ 	  margin-top:40px;
+ 	margin-left:-50px;
+ 	width: 110%;
+ 	width :205; height:90px; 
+
+}
+.link{
+ margin-top:50px;
+          font-size: 32px;
+          color: black;
+          display: flex;
+           width: 30%;
+          margin-left: -400px;
+}
+.link1,.link2{
+	color: black;
+	text-decoration: none;
+	margin-right: 30px;
+  }
+.link1:hover{
+	color:#CBA878;
+}
+.link2:hover{
+	color:#CBA878;
+}
+.run{
+	width: 60px;
+	height: 60px;
+	margin-top: 45px;
+	margin-right:-85px;
+}
+nav{
+	height: 500px;
+	display: flex;
+}
+h1{
+top: 229px;
+ width: 783px;
+height: 219px;
+   margin-left: 100px;
+ text-align: left;
+font: normal normal normal 47px/81px Roboto;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+h2{
+	width: 537px;
+height: 57px;
+ margin-left: 100px;
+text-align: left;
+font: normal normal normal 47px/81px Roboto;
+letter-spacing: 0px;
+color: #D7B27F;
+opacity: 1;
+}
+.last{
+	margin-left: 200px;
+}
+
+
+.thelast{
+	background-color:#C19468;
+	height: 600px;
+}
+.one{
+	margin-left: 60px;
+	padding-top: 50px;
+}
+.three{
+	display: flex;
+}
+h4{
+	margin-top: 70px;
+	margin-left: 290px;
+width: 498px;
+height: 81px;
+color: var(---cb6a61);
+text-align: left;
+font: normal normal normal 42px/43px Roboto;
+letter-spacing: 0.22px;
+color: #000000;
+}
+.email{
+width: 503px;
+height: 60px;
+background: #F2F2F2 0% 0% no-repeat padding-box;
+border-radius: 15px;
+border: none;
+margin-left: 290px;
+font: normal normal normal 22px/27px Roboto;
+letter-spacing: 0px;
+opacity: 1; 
+        outline: none;
+
+ }
+label{
+	position: relative;
+}
+.bu{
+	position: absolute;
+    top:5;
+    bottom: 4;
+    right: 0;
+	height: 60px;
+    width: 150px;
+    padding: 9px 15px;
+    background-color:#804E34;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-size: 20px;
+ }
+ .big{
+ 	display: flex;
+ }
+ .div1,.div2,.div3{
+
+ }
+ .visa{
+ 	display: flex;
+ 	margin-left: 120px;
+ 	margin-right: 20px;
+ }
+ .fa{
+ 	margin-right: 25px;
+ }
+ .hand{
+ 	margin-right: 25px;
+ }
+ .face{
+ 	display: flex;
+ 	margin-left: 120px;
+ }
+ .book{
+ 	 	margin-right: 20px;
+
+ }
+ .ins{
+ 	 	margin-right: 20px;
+ }
+ .tw{
+ 	 	margin-right: 20px;
+
+ }
+ .v{
+ 	font-size: 35px;
+ 	color: white;
+ 	margin-left: 100px;
+ 	margin-top: 50px;
+ }
+ .vv{
+ 	font-size: 35px;
+ 	color: white;
+ 	margin-left: 100px;
+ 	margin-top: 50px;
+ }
+.vvv{
+ 	font-size: 35px;
+ 	color: white;
+ 	margin-left: 120px;
+ 	margin-top: 50px;
+ }
+.gmail,.num{
+font: normal normal normal 28px/31px Roboto;
+letter-spacing: 0px;
+color: #804E34;
+opacity: 1;
+margin-left: 95px;
+
+}
+.hr{
+	  border: 1px solid #804E34 ;
+ display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-left: -250px;
+  margin-right: 300px;
+  width: 100%;
+}
+.final{
+  color:#804E34;
+  font: normal normal normal 25px/35px Roboto;
+text-align:center;	
+margin-right:330px;
+}
+
+@media (max-width:767px) { 
+       .imgs{
+       	 	width :150px; height:40px; 
+       	 	width: 60%;
+       	 	margin-top:10px;
+         	margin-left:10px;
+
+       }
+   .link{
+          margin-top:20px;
+          font-size: 20px;
+          color: black;
+          display: flex;
+           width: 60%;
+          margin-left: 20px;
+}
+.link1{
+	margin-left: -20px;
+	margin-right: 10px;
+}
+.run{
+	width: 30px;
+	height: 30px;
+	margin-top: 20px;
+	margin-right:20px;
+}
+nav{
+	display: inline-block;
+}
+h1{
+  width: 250px;
+height: 150px;
+   margin-left: 40px;
+ font: normal normal normal 25px/37px Roboto;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+h2{
+	width: 270px;
+height: 57px;
+ margin-left: 25px;
+text-align: left;
+font: normal normal normal 26px/38px Roboto;
+letter-spacing: 0px;
+color: #D7B27F;
+opacity: 1;
+}
+.last{
+	margin-top: 0px;
+	margin-left: 50px;
+	 
+}
+.na{
+	width: 200px;
+	height: 200px;
+}
+.thelast{
+	background-color:#C19468;
+	height: 1200px;
+}
+.three{
+	display: inline-block;
+
+}
+.man{
+	width: 200px;
+	height: 200px;
+}
+h4{
+	margin-left: 20px;
+	font-size: 25px;
+	width: 300px;
+}
+
+
+.email{
+width: 260px;
+height: 50px;
+background: #F2F2F2 0% 0% no-repeat padding-box;
+border-radius: 15px;
+border: none;
+margin-left: 20px;
+font: normal normal normal 18px/20px Roboto;
+letter-spacing: 0px;
+opacity: 1; 
+        outline: none;
+
+ }
+label{
+	position: relative;
+}
+.bu{
+	position: absolute;
+    top:5;
+    bottom: 4;
+    right: 0;
+	height: 50px;
+    width: 90px;
+    padding: 9px 15px;
+    background-color:#804E34;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-size: 15px;
+ }
+.big{
+	display: inline-block;
+}
+
+
+ .v{
+ 	font-size: 25px;
+ 	color: white;
+ 	margin-left: 80px;
+ 	margin-top: 50px;
+ }
+.vv{
+  font-size: 25px;
+  color: white;
+  margin-left: 60px;
+  margin-top: 50px;
+    text-align: center;
+
+ }
+ .vvv{
+  font-size: 25px;
+  color: white;
+  margin-left: 60px;
+  margin-top: 50px;
+    text-align: center;
+
+ }
+.visa{
+  margin-left: 60px;
+}
+.face{
+  margin-left: 110px;
+}
+.gmail,.num{
+  font: normal normal normal 20px/21px Roboto;
+letter-spacing: 0px;
+color: #804E34;
+opacity: 1;
+text-align: center;
+}
+.hr{
+    border: 1px solid #804E34 ;
+ display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 10px;
+  margin-right: -10px;
+  width:70%;
+  text-align: center;
+}
+.final{
+  font-size: 15px;
+  text-align: center;
+   margin-left: -60px;
+   margin-right: 10PX;
+}
+.tt{
+  width: 250px;
+  height: 300px;
+  margin-left:5px;
+}
+
+}
+
+
